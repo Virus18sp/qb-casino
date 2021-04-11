@@ -32,7 +32,7 @@ Citizen.CreateThread(function()
                 if dist < 1 then
                    
                     DrawText3Ds(-1876.14, 2060.96, 145.57, '~g~E~w~ - Sell chips')
-                    if IsControlJustPressed(0, Config.Keys["E"]) then
+                    if IsControlJustPressed(0, Config.38) then
                         TriggerServerEvent('qb-casino:sharlock:sell')
                     end
                 end
