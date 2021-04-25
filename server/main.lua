@@ -19,7 +19,7 @@ AddEventHandler("qb-casino:sharlock:sell", function()
                 end
             end
         end
-        Player.Functions.AddItem("cash", price, "sold-casino-chips")
+        Player.Functions.AddMoney("cash", price, "sold-casino-chips")
         TriggerClientEvent('QBCore:Notify', src, "You sold your chips for $"..price)
         TriggerEvent("qb-log:server:CreateLog", "casino", "Chips", "blue", "**"..GetPlayerName(src) .. "** got $"..price.." for selling the Chips")
         else
